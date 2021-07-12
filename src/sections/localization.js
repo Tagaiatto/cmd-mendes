@@ -1,33 +1,35 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
+import { Container, Box, Heading, Text, Image, Divider } from 'theme-ui';
+import MapImg from 'assets/mapaCmdMendes.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 
-export default function Banner() {
+export default function Localization() {
   return (
-    <section sx={styles.banner} id="home">
-      <Container sx={styles.banner.container}>
-        <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            Edifício Comandante Mendes
+    <section sx={styles.map} id="localization">
+      <Container sx={styles.map.container}>
+        <Box sx={styles.map.contentBox}>
+          <Heading as="h4" variant="heroPrimary">
+            Localização
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Melhores kitnets para alugar em Fortaleza!
+          R. Júlio Verne, 101 - Serrinha, Fortaleza - CE, 60741-205
           </Text>
         </Box>
 
-        <Box sx={styles.banner.imageBox}>
-          {/* {<Image src={BannerImg} alt="banner" />} */}
+        <Box sx={styles.map.imageBox}>
+          <Image src={MapImg} alt="Mapa" />
         </Box>
+        <Divider />
       </Container>
     </section>
   );
 }
 
 const styles = {
-  banner: {
+  map: {
+    mb: '150px',
     pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
@@ -74,6 +76,7 @@ const styles = {
       justifyContent: 'center',
       textAlign: 'center',
       display: 'inline-flex',
+      borderStyle: 'solid',
       mb: [0, null, -6, null, null, '-40px', null, -3],
       img: {
         position: 'relative',

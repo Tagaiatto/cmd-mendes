@@ -9,7 +9,7 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
+          {/* <Link path="/">
             <Image src={FooterLogo} alt="Logo" />
           </Link>
           <Box sx={styles.footer.menus}>
@@ -22,10 +22,10 @@ export default function Footer() {
                   sx={styles.footer.link}
                 />
               ))}
-            </nav>
-          </Box>
+            </nav> 
+          </Box> */}
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Company Name
+            Copyright by {new Date().getFullYear()} Edifício Comandante Mendes
           </Text>
         </Box>
       </Container>
