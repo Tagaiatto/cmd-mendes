@@ -48,7 +48,7 @@ const data = [
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1619 },
-    items: 5,
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   laptop: {
@@ -72,7 +72,7 @@ const carouselParams = {
   additionalTransfrom:0,
   arrows:true,
   autoPlaySpeed:3000,
-  centerMode:true,
+  centerMode:false,
   className:"",
   containerClass:"carousel-container",
   // customButtonGroup:<ButtonGroup />,
@@ -138,17 +138,17 @@ const styles = {
         null,
         'calc(50% + 865px)',
       ],
-      mr: ['auto', null, null, null, null, null, null, '-220px'],
+      mr: ['auto', null, null, null, null, null, null, 'auto'],
       ml: 'auto',
       '.react-multi-carousel-item': {
         transition: 'all 0.25s',
       },
-      '.react-multi-carousel-item--active:nth-of-type(4n)': {
-        opacity: '0.5',
-        '@media screen and (max-width: 1620px)': {
-          opacity: 1,
-        },
-      },
+      // '.react-multi-carousel-item--active:nth-of-type(4n)': {
+      //   opacity: '0.5',
+      //   '@media screen and (max-width: 1620px)': {
+      //     opacity: 1,
+      //   },
+      // },
     },
   },
   aptoCard: {
